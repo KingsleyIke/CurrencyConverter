@@ -38,6 +38,7 @@ class MainViewModel @Inject constructor(
         val fromAmount = amountStr.toFloatOrNull()
         if (fromAmount == null) {
             _conversion.value = CurrencyEvent.Failure("Not a valid number")
+
             return
         }
 
